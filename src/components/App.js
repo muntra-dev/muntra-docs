@@ -1,8 +1,10 @@
-import "../App.css";
 import BookingWidget from "./BookingWidget";
+import BookingWidgetSVG from "../assets/svg/BookingWidgetSVG";
 import React, { useState } from "react";
 import ReferralWidget from "./ReferralWidget";
+import ReferralWidgetSVG from "../assets/svg/ReferralWidgetSVG";
 import TrackingWidget from "./TrackingWidget";
+import TrackingWidgetSVG from "../assets/svg/TrackingWidgetSVG";
 
 function App() {
   const [showPixel, setShowPixel] = useState(false);
@@ -11,9 +13,37 @@ function App() {
 
   return (
     <div>
-      <button>Muntra Pixel</button>
-      <button>Bokningswidget</button>
-      <button>Remisswidget</button>
+      {!showBooking && !showPixel && !showReferral && (
+        <div className='flex'>
+          <div className='flexCol justAndAlignCenter'>
+            <TrackingWidgetSVG classProp='SvgSize' />
+            <button className='SelectButton' onClick={() => setShowPixel(true)}>
+              Muntra Pixel
+            </button>
+          </div>
+          <div className='flexCol justAndAlignCenter'>
+            <BookingWidgetSVG classProp='SvgSize' />
+            <button
+              className='SelectButton'
+              onClick={() => setShowBooking(true)}
+            >
+              Bokningswidget
+            </button>
+          </div>
+          <div className='flexCol justAndAlignCenter'>
+            <ReferralWidgetSVG classProp='SvgSize' />
+            <button
+              className='SelectButton'
+              onClick={() => setShowReferral(true)}
+            >
+              Remisswidget
+            </button>
+          </div>
+        </div>
+      )}
+      {showBooking && <BookingWidget />}
+      {showPixel && <TrackingWidget />}
+      {showReferral && <ReferralWidget />}
     </div>
   );
 }
