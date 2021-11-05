@@ -1,9 +1,12 @@
 html {
-  background-image: url(./assets/MuntraBackground.png);
+  /* background-image: url(./assets/MuntraBackground.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%; */
 }
 
-button {
+.SelectButton {
+  width: 200px;
   background-color: #2595ad;
   border-color: #2595ad;
   border-radius: 5px;
@@ -19,10 +22,6 @@ button {
   min-height: 45px;
   outline: none;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-}
-
-.SelectButton {
-  width: 200px;
 }
 
 .flex {

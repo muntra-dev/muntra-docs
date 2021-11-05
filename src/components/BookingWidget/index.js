@@ -1,11 +1,22 @@
-import React from "react";
+import "./index.css";
+import React, { useEffect } from "react";
 
 function BookingWidget() {
+  useEffect(() => {
+    const script = document.createElement("script");
+
+    script.src = "https://muntra-dev.github.io/index.js";
+    script.async = true;
+
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <div class='auto-margin page-body'>
       <div class='flex-column'>
         <h2>
-          Import the widget right before the closing body tag (&#x3C;/body&#x3E)
+          Import the widget right before the closing body tag
+          (&#x3C;/body&#x3E;)
         </h2>
         <div class='code'>
           &#x3C;script type=&#x22;text/javascript&#x22;
