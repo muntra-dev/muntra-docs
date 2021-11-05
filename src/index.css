@@ -5,6 +5,28 @@ html {
   background-size: 100%; */
 }
 
+code {
+  direction: ltr !important;
+  line-height: 1.45;
+  padding: 0;
+  padding-left: 3 em;
+  padding-top: 1 em;
+  padding-bottom: 0.5 em;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: auto;
+  font-family: "DejaVuSansMono", "Menlo", "Liberation Mono", "Consolas",
+    "DejaVu Sans Mono", "Ubuntu Mono", "Courier New", "andale mono",
+    "lucida console", monospace !important;
+  white-space: pre;
+  word-wrap: normal;
+  padding: 3px 7px;
+  color: #24292e;
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
 .SelectButton {
   width: 200px;
   background-color: #2595ad;
@@ -30,6 +52,14 @@ html {
 .flexCol {
   display: flex;
   flex-direction: column;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  background: #221a0f;
+  color: #d3af86;
+  padding: 0.5em;
 }
 
 .justAndAlignCenter {
