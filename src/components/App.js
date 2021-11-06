@@ -34,13 +34,13 @@ function App() {
       {!showBooking && !showPixel && !showReferral && (
         <div className='flex justAndAlignCenter muntraBackground'>
           <div className='flexCol justAndAlignCenter'>
-            <TrackingWidgetSVG classProp='SvgSize' />
+            <TrackingWidgetSVG onClick={setShowPixel} classProp='SvgSize' />
             <button className='SelectButton' onClick={() => setShowPixel(true)}>
               Muntra Pixel
             </button>
           </div>
           <div className='flexCol justAndAlignCenter'>
-            <BookingWidgetSVG classProp='SvgSize' />
+            <BookingWidgetSVG classProp='SvgSize' onClick={setShowBooking} />
             <button
               className='SelectButton'
               onClick={() => setShowBooking(true)}
@@ -49,7 +49,7 @@ function App() {
             </button>
           </div>
           <div className='flexCol justAndAlignCenter'>
-            <ReferralWidgetSVG classProp='SvgSize' />
+            <ReferralWidgetSVG classProp='SvgSize' onClick={setShowReferral} />
             <button
               className='SelectButton'
               onClick={() => setShowReferral(true)}

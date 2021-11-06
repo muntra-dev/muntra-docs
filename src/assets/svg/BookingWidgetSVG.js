@@ -1,14 +1,16 @@
 import React from "react";
 import { SVGUniqueID } from "react-svg-unique-id";
 
-const BookingWidgetSVG = ({ classProp }) => (
+const BookingWidgetSVG = ({ classProp, onClick }) => (
   <SVGUniqueID>
     <svg
       className={classProp}
-      xmlns='http://www.w3.org/2000/svg'
-      xmlnsXlink='http://www.w3.org/1999/xlink'
+      onClick={() => onClick(true)}
+      role='button'
       version='1'
       viewBox='-69.8 -88.61 514.59 533.4'
+      xmlns='http://www.w3.org/2000/svg'
+      xmlnsXlink='http://www.w3.org/1999/xlink'
     >
       <defs>
         <filter

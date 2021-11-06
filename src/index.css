@@ -91,6 +91,7 @@ code {
 .SvgSize {
   height: 500px;
   width: auto;
+  cursor: pointer;
 }
 
 .mainHeader {

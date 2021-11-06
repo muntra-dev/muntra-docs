@@ -1,14 +1,16 @@
 import * as React from "react";
 import { SVGUniqueID } from "react-svg-unique-id";
 
-const ReferralWidgetSVG = ({ classProp }) => (
+const ReferralWidgetSVG = ({ classProp, onClick }) => (
   <SVGUniqueID>
     <svg
       className={classProp}
-      xmlns='http://www.w3.org/2000/svg'
-      xmlnsXlink='http://www.w3.org/1999/xlink'
+      onClick={() => onClick(true)}
+      role='button'
       version='1'
       viewBox='-127.91 -127.91 630.82 630.82'
+      xmlns='http://www.w3.org/2000/svg'
+      xmlnsXlink='http://www.w3.org/1999/xlink'
     >
       <defs>
         <filter

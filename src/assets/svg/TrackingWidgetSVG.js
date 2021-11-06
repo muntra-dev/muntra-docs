@@ -1,14 +1,16 @@
 import * as React from "react";
 import { SVGUniqueID } from "react-svg-unique-id";
 
-const TrackingWidgetSVG = ({ classProp }) => (
+const TrackingWidgetSVG = ({ classProp, onClick }) => (
   <SVGUniqueID>
     <svg
       className={classProp}
-      xmlns='http://www.w3.org/2000/svg'
-      xmlnsXlink='http://www.w3.org/1999/xlink'
+      onClick={() => onClick(true)}
+      role='button'
       version='1'
       viewBox='-134.28 -135.12 643.56 641.63'
+      xmlns='http://www.w3.org/2000/svg'
+      xmlnsXlink='http://www.w3.org/1999/xlink'
     >
       <defs>
         <filter
