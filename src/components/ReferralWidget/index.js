@@ -15,7 +15,7 @@ function ReferralWidget() {
       <div className='flex-column'>
         <h1>Muntra Referral Widget Docs</h1>
         <h2>
-          Import the widget right before the closing body tag
+          Import the widget code right before the closing body tag
           (&#x3C;/body&#x3E;)
         </h2>
         <pre>

@@ -17,7 +17,7 @@ function BookingWidget() {
         <div class='flex-column'>
           <h1>Muntra Booking Widget Docs</h1>
           <h2>
-            Import the widget right before the closing body tag
+            Import the widget code right before the closing body tag
             (&#x3C;/body&#x3E;)
           </h2>
           <pre>
