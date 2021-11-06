@@ -12,9 +12,9 @@ function App() {
   const [showBooking, setShowBooking] = useState(false);
 
   return (
-    <div>
+    <div style={{ height: "100vh" }}>
       {!showBooking && !showPixel && !showReferral && (
-        <div className='flex'>
+        <div className='flex justAndAlignCenter muntraBackground'>
           <div className='flexCol justAndAlignCenter'>
             <TrackingWidgetSVG classProp='SvgSize' />
             <button className='SelectButton' onClick={() => setShowPixel(true)}>

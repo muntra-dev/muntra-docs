@@ -5,6 +5,11 @@ html {
   background-size: 100%; */
 }
 
+body {
+  margin: 0px !important;
+  height: 100vh;
+}
+
 code {
   direction: ltr !important;
   line-height: 1.45;
@@ -25,6 +30,10 @@ code {
   background-color: rgba(27, 31, 35, 0.05);
   border-radius: 3px;
   font-size: 1rem;
+}
+
+#root {
+  height: 100vh;
 }
 
 .SelectButton {
@@ -70,4 +79,13 @@ code {
 .SvgSize {
   height: 500px;
   width: auto;
+}
+
+.muntraBackground {
+  background-image: url(./assets/MuntraBackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: inherit;
+  width: inherit;
 }
