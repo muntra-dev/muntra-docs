@@ -36,6 +36,18 @@ code {
   height: 100vh;
 }
 
+.backButton {
+  fill: #454f63 !important;
+  max-height: 20px;
+  max-width: 20px;
+  stroke: #454f63;
+  margin: 20px 0px 0px 20px;
+  cursor: pointer;
+}
+
+.backButtonContainer {
+}
+
 .SelectButton {
   width: 200px;
   background-color: #2595ad;

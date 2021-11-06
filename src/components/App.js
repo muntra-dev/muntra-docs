@@ -1,5 +1,6 @@
 import BookingWidget from "./BookingWidget";
 import BookingWidgetSVG from "../assets/svg/BookingWidgetSVG";
+import LeftArrowSVG from "../assets/svg/LeftArrowSVG";
 import React, { useState } from "react";
 import ReferralWidget from "./ReferralWidget";
 import ReferralWidgetSVG from "../assets/svg/ReferralWidgetSVG";
@@ -11,8 +12,25 @@ function App() {
   const [showReferral, setShowReferral] = useState(false);
   const [showBooking, setShowBooking] = useState(false);
 
+  const isAtPage = showBooking || showReferral || showPixel;
+
+  function resetPageStates() {
+    setShowBooking(false);
+    setShowPixel(false);
+    setShowReferral(false);
+  }
+
   return (
     <div style={{ height: "100vh" }}>
+      {isAtPage && (
+        <div
+          role='button'
+          onClick={resetPageStates}
+          className='backButtonContainer'
+        >
+          <LeftArrowSVG classProp='backButton' />
+        </div>
+      )}
       {!showBooking && !showPixel && !showReferral && (
         <div className='flex justAndAlignCenter muntraBackground'>
           <div className='flexCol justAndAlignCenter'>
