@@ -14,6 +14,16 @@ function ReferralWidget() {
     <div className='auto-margin page-body'>
       <div className='flex-column'>
         <h1>Muntra Referral Widget Docs</h1>
+        <h2>Information</h2>
+        <p>
+          IMPORTANT: MUNTRA PERSONEL MUST WHITELIST YOUR DOMAIN FOR THE WIDGET
+          TO WORK
+        </p>
+        <p>
+          The Referral Widget is a way to integrate your website directly to
+          Muntra. This means that caregivers will be able to send you digital
+          remittances via your own website directly to your clinic in Muntra.
+        </p>
         <h2>
           Import the widget code right before the closing body tag
           (&#x3C;/body&#x3E;)

@@ -25,9 +25,9 @@ function TrackingWidget() {
         <ol>
           <li className='has-line-data' data-line-start={8} data-line-end={9}>
             Add
-            <code>&lt;div class="muntra-pixel"&gt;&lt;/div&gt;</code> a place in
-            the code where it will be present within the{" "}
-            <code>&lt;body&gt;</code> no matter which page your on
+            <code>&lt;div class="muntra-pixel"&gt;&lt;/div&gt;</code> to a place
+            in the code where it will be present within the{" "}
+            <code>&lt;body&gt;</code> no matter which page you´re on
           </li>
           <li className='has-line-data' data-line-start={9} data-line-end={10}>
             Add
