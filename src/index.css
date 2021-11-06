@@ -93,6 +93,10 @@ code {
   width: auto;
 }
 
+.mainHeader {
+  font-size: 50px;
+}
+
 .muntraBackground {
   background-image: url(./assets/MuntraBackground.png);
   background-size: cover;

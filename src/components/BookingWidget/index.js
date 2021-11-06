@@ -15,8 +15,8 @@ function BookingWidget() {
     <>
       <div class='auto-margin page-body'>
         <div class='flex-column'>
-          <h1>Muntra Booking Widget Docs</h1>
-          <h2>Information</h2>
+          <h1 className='mainHeader'>Muntra Booking Widget Docs</h1>
+          <h1>Information</h1>
           <p>
             IMPORTANT: MUNTRA PERSONEL MUST WHITELIST YOUR DOMAIN FOR THE WIDGET
             TO WORK
@@ -26,6 +26,7 @@ function BookingWidget() {
             Muntra. This means that your patients will be able to book times or
             send booking request from your own website directly into Muntra.
           </p>
+          <h3>Deployment to website</h3>
           <h2>
             Import the widget code right before the closing body tag
             (&#x3C;/body&#x3E;)

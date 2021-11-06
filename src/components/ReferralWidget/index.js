@@ -13,8 +13,8 @@ function ReferralWidget() {
   return (
     <div className='auto-margin page-body'>
       <div className='flex-column'>
-        <h1>Muntra Referral Widget Docs</h1>
-        <h2>Information</h2>
+        <h1 className='mainHeader'>Muntra Referral Widget Docs</h1>
+        <h1>Information</h1>
         <p>
           IMPORTANT: MUNTRA PERSONEL MUST WHITELIST YOUR DOMAIN FOR THE WIDGET
           TO WORK
@@ -24,10 +24,35 @@ function ReferralWidget() {
           Muntra. This means that caregivers will be able to send you digital
           remittances via your own website directly to your clinic in Muntra.
         </p>
-        <h2>
-          Import the widget code right before the closing body tag
-          (&#x3C;/body&#x3E;)
-        </h2>
+        <h2>Deployment to website</h2>
+        <ol>
+          <li className='has-line-data' data-line-start={8} data-line-end={9}>
+            Add the div below to the place on the website where you want the
+            widget
+          </li>
+          <li className='has-line-data' data-line-start={9} data-line-end={10}>
+            Add the script below to right before the closing body tag
+          </li>
+        </ol>
+
+        <div className='flex-column'>
+          <h3>Widget placement example</h3>
+          <pre>
+            <code
+              className='has-line-data'
+              data-line-start={12}
+              data-line-end={17}
+            >
+              &#x3C;div class=&#x22;muntra-referral-widget&#x22;
+              muntra_clinic_id=&#x22;1&#x22;&#x3E;&#x3C;/div&#x3E;
+            </code>
+          </pre>
+          <div className='muntra-referral-widget' muntra_clinic_id='1'></div>
+        </div>
+        <h3>
+          Import the widget code with the script right before the closing body
+          tag (&#x3C;/body&#x3E;)
+        </h3>
         <pre>
           <code
             className='has-line-data'
@@ -39,20 +64,7 @@ function ReferralWidget() {
           </code>
         </pre>
       </div>
-      <div className='flex-column'>
-        <h2>Widget placement example</h2>
-        <pre>
-          <code
-            className='has-line-data'
-            data-line-start={12}
-            data-line-end={17}
-          >
-            &#x3C;div class=&#x22;muntra-referral-widget&#x22;
-            muntra_clinic_id=&#x22;1&#x22;&#x3E;&#x3C;/div&#x3E;
-          </code>
-        </pre>
-        <div className='muntra-referral-widget' muntra_clinic_id='1'></div>
-      </div>
+
       <>
         {" "}
         <h1 className='code-line' data-line-start={0} data-line-end={1}>

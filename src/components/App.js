@@ -45,7 +45,7 @@ function App() {
               className='SelectButton'
               onClick={() => setShowBooking(true)}
             >
-              Bokningswidget
+              Booking Widget
             </button>
           </div>
           <div className='flexCol justAndAlignCenter'>
@@ -54,7 +54,7 @@ function App() {
               className='SelectButton'
               onClick={() => setShowReferral(true)}
             >
-              Remisswidget
+              Referral Widget
             </button>
           </div>
         </div>
