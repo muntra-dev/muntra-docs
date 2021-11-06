@@ -19,7 +19,6 @@ function TrackingWidget() {
         <h2>Tracking Widget</h2>
 
         <h3 className='code-line' data-line-start={7} data-line-end={8}>
-          <a id='Deployment_to_website_7' />
           Deployment to website
         </h3>
         <ol>

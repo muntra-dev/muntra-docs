@@ -56,7 +56,6 @@ function ReferralWidget() {
       <>
         {" "}
         <h1 className='code-line' data-line-start={0} data-line-end={1}>
-          <a id='Placing_a_widget_on_a_page_0' />
           Placing a widget on a page
         </h1>
         <p className='has-line-data' data-line-start={2} data-line-end={3}>
@@ -128,7 +127,6 @@ function ReferralWidget() {
           </code>
         </pre>
         <h1 className='code-line' data-line-start={37} data-line-end={38}>
-          <a id='Styling_a_widget_window_37' />
           Styling a widget window
         </h1>
         <p className='has-line-data' data-line-start={39} data-line-end={40}>
