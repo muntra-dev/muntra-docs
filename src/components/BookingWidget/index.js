@@ -42,7 +42,7 @@ function BookingWidget() {
           </ol>
         </div>
         <div className='flex-column'>
-          <h3>All caregivers at clinic</h3>
+          <h3 style={{ marginTop: "50px" }}>All caregivers at clinic</h3>
           <pre>
             <code
               className='has-line-data'
@@ -109,6 +109,7 @@ function BookingWidget() {
             muntra_clinic_id='16'
             muntra_referral_source='sveatandklinik.se'
             muntra_button_text='Boka tandhygienist'
+            style={{ marginBottom: "1em" }}
           ></div>
           <pre>
             <code

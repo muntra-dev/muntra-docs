@@ -16,7 +16,7 @@ function TrackingWidget() {
           This allows you to see the whole customer jounrey and optimize your
           marketing.
         </p>
-        <h1>Tracking Widget</h1>
+        <h1 style={{ marginBottom: "0px" }}>Tracking Widget</h1>
 
         <h2>Deployment to website</h2>
         <ol>
@@ -27,7 +27,7 @@ function TrackingWidget() {
           <li className='has-line-data' data-line-start={9} data-line-end={10}>
             Add the script below after the div added in step 1
           </li>
-          <h3>
+          <h3 style={{ marginTop: "50px" }}>
             Add this div within the <code>&lt;body&gt;</code> tag at a place
             where it will be present on all pages
           </h3>

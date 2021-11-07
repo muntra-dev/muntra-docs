@@ -36,7 +36,7 @@ function ReferralWidget() {
         </ol>
 
         <div className='flex-column' style={{ marginBottom: "25px" }}>
-          <h3>Widget placement example</h3>
+          <h3 style={{ marginTop: "50px" }}>Widget placement example</h3>
           <pre>
             <code
               className='has-line-data'
