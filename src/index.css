@@ -45,9 +45,6 @@ code {
   cursor: pointer;
 }
 
-.backButtonContainer {
-}
-
 .SelectButton {
   width: 200px;
   background-color: #2595ad;
@@ -65,6 +62,11 @@ code {
   min-height: 45px;
   outline: none;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.SelectButton:hover {
+  background-color: #115672;
+  border-color: #115672;
 }
 
 .flex {
