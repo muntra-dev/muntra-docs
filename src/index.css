@@ -91,9 +91,9 @@ code {
 }
 
 .SvgSize {
+  cursor: pointer;
   height: 500px;
   width: auto;
-  cursor: pointer;
 }
 
 .mainHeader {
@@ -101,7 +101,8 @@ code {
 }
 
 .muntraBackground {
-  background-image: url(./assets/MuntraBackground.png);
+  /* background-image: url(./assets/MuntraBackground.png); */
+  background-color: #f6f9fc;
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 100%;
