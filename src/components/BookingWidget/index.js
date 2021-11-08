@@ -17,10 +17,10 @@ function BookingWidget() {
         <div className='flex-column'>
           <h1 className='mainHeader'>Muntra Booking Widget Docs</h1>
           <h1>Information</h1>
-          <p>
+          <b>
             IMPORTANT: MUNTRA PERSONEL MUST WHITELIST YOUR DOMAIN FOR THE WIDGET
             TO WORK
-          </p>
+          </b>
           <p>
             The Booking Widget is a way to integrate your website directly to
             Muntra. This means that your patients will be able to book times or

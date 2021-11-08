@@ -21,8 +21,15 @@ function TrackingWidget() {
         <h2>Deployment to website</h2>
         <ol>
           <li className='has-line-data' data-line-start={8} data-line-end={9}>
+            Get your Muntra Pixel ID from Muntra.
+          </li>
+          <li className='has-line-data' data-line-start={8} data-line-end={9}>
             Add the div below to a place in the code where it will be present
             within the <code>&lt;body&gt;</code> no matter which page you´re on
+          </li>
+          <li className='has-line-data' data-line-start={8} data-line-end={9}>
+            Change the <code>pixel_id</code> attribute to the Muntra Pixel ID
+            received by Muntra
           </li>
           <li className='has-line-data' data-line-start={9} data-line-end={10}>
             Add the script below after the div added in step 1
@@ -32,7 +39,10 @@ function TrackingWidget() {
             where it will be present on all pages
           </h3>
           <pre>
-            <code>&lt;div class="muntra-pixel"&gt;&lt;/div&gt;</code>
+            <code>
+              &lt;div class="muntra-pixel" pixel_id="THIS_IS_AN_EXAMPLE"
+              &gt;&lt;/div&gt;
+            </code>
           </pre>
           <h3>
             Important! Import the widget code right before the closing body tag
