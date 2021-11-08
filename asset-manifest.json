@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/muntra-docs/static/css/main.aee0d8fd.chunk.css",
-    "main.js": "/muntra-docs/static/js/main.e039ce57.chunk.js",
-    "main.js.map": "/muntra-docs/static/js/main.e039ce57.chunk.js.map",
+    "main.js": "/muntra-docs/static/js/main.d9f930d3.chunk.js",
+    "main.js.map": "/muntra-docs/static/js/main.d9f930d3.chunk.js.map",
     "runtime-main.js": "/muntra-docs/static/js/runtime-main.3712e23d.js",
     "runtime-main.js.map": "/muntra-docs/static/js/runtime-main.3712e23d.js.map",
     "static/js/2.4c4f86c3.chunk.js": "/muntra-docs/static/js/2.4c4f86c3.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.3712e23d.js",
     "static/js/2.4c4f86c3.chunk.js",
     "static/css/main.aee0d8fd.chunk.css",
-    "static/js/main.e039ce57.chunk.js"
+    "static/js/main.d9f930d3.chunk.js"
   ]
 }
