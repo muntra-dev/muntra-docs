@@ -20,9 +20,9 @@ function ReferralWidget() {
           TO WORK
         </b>
         <p>
-          The Referral Widget is a way to integrate your website directly to
-          Muntra. This means that caregivers will be able to send you digital
-          remittances via your own website directly to your clinic in Muntra.
+          The Referral Widget integrates the clinic's website directly into the
+          referral handling in Muntra. This enables caregivers to send digital
+          referrals to the clinic, from the clinic's own website.
         </p>
         <h2>Deployment to website</h2>
         <ol>

@@ -32,7 +32,7 @@ function App() {
         </div>
       )}
       {!showBooking && !showPixel && !showReferral && (
-        <div className='flex justAndAlignCenter muntraBackground'>
+        <div className='flex justAndAlignCenter muntraBackground mobileFlexCol'>
           <div className='flexCol justAndAlignCenter'>
             <TrackingWidgetSVG onClick={setShowPixel} classProp='SvgSize' />
             <button className='SelectButton' onClick={() => setShowPixel(true)}>

@@ -30,8 +30,8 @@ function BookingWidget() {
           <h2>Deployment to website</h2>
           <ol>
             <li className='has-line-data' data-line-start={8} data-line-end={9}>
-              Add the div of the widget variant you want from below to the place
-              on the website where you want to place the widget
+              Add the widget's div element where it should be visible on the
+              page. You can find examples their corresponding div:s down below
             </li>
             <li
               className='has-line-data'
@@ -74,7 +74,7 @@ function BookingWidget() {
               key=&#x22;1&#x22; muntra_caregiver_id=&#x22;2852&#x22;
               muntra_clinic_id=&#x22;16&#x22;
               muntra_referral_source=&#x22;sveatandklinik.se&#x22;
-              muntra_button_text=&#x22;Boka Specific
+              muntra_button_text=&#x22;Boka specifik
               behandlare&#x22;&#x3E;&#x3C;/div&#x3E;
             </code>
           </pre>
@@ -84,7 +84,7 @@ function BookingWidget() {
             muntra_caregiver_id='2852'
             muntra_clinic_id='16'
             muntra_referral_source='sveatandklinik.se'
-            muntra_button_text='Boka Specific behandlare'
+            muntra_button_text='Boka specifik behandlare'
           ></div>
         </div>
         <div className='flex-column'>
@@ -226,12 +226,21 @@ function BookingWidget() {
         <h1 className='code-line'>Important Info</h1>
         <ul>
           <li className='has-line-data' data-line-start='1' data-line-end='3'>
-            For the widget to work the origin point must be first whitelisted by
-            the server, the muntra_referral_source attribute and the
-            whitelisting needs to be an exact match of the origin point. If
-            whitelisting is missing or if muntra_referral_source is incorrect an
-            error showing the correct origin point will be shown in the network
-            tab of the browser inspector. This is done by Muntra-personel.
+            <p>
+              For the widget to work, requests to Muntra's API need to be
+              whitelisted. The origin header in the API request should match
+              exactly to the whitelisting.
+            </p>
+
+            <p>
+              A missing whitelisting is indicated in the browser's inspector.
+              Eg. in the Networks tab in Google Chrome.
+            </p>
+
+            <p>
+              The whitelisting and any troubleshooting are usually done by
+              Muntra personnel.
+            </p>
           </li>
         </ul>
         <h1 className='code-line' data-line-start='3' data-line-end='4'>

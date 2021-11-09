@@ -243,6 +243,7 @@ th {
 .page-body {
   margin: 100px auto;
   max-width: 800px;
+  padding-bottom: 200px;
   width: 100%;
 }
 .right-align {
@@ -293,4 +294,11 @@ pre code {
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
+}
+
+@media (max-width: 992px) {
+  .page-body {
+    margin-top: 0px !important;
+    max-width: 80vw;
+  }
 }

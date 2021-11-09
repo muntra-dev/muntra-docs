@@ -58,7 +58,11 @@ function TrackingWidget() {
             (&#x3C;/body&#x3E;)
           </h3>
           <pre>
-            <code class='has-line-data' data-line-start='32' data-line-end='34'>
+            <code
+              className='has-line-data'
+              data-line-start='32'
+              data-line-end='34'
+            >
               &#x3C;script type=&#x22;text/javascript&#x22;
               src="https://muntra-dev.github.io/pixel/index.js"&gt;&lt;/script&gt;
             </code>
