@@ -16,14 +16,9 @@ function TrackingWidget() {
         <h1 className='mainHeader'>Muntra Pixel Docs</h1>
         <h1>Information</h1>
         <p>
-          The Muntra Pixel is a combination of different tracking id:s which
-          allows you to get an overview of patient events.
-        </p>
-        <p>
-          In practice this means that you will be able to actually track ROI on
-          your marketing campaigns and get a clear overview of patient behavior.
-          This allows you to see the whole customer jounrey and optimize your
-          marketing.
+          The Muntra pixel is a piece of code for the clinic's website that
+          allows you to measure, optimize and create audiences for your patient
+          acquisition.
         </p>
         <h1 style={{ marginBottom: "0px" }}>Tracking Widget</h1>
 
