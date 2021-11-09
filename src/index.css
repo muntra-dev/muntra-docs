@@ -114,6 +114,7 @@ code {
   .muntraBackground {
     height: auto;
     width: auto;
+    overflow-x: hidden;
   }
 
   .mobileFlexCol {
