@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function TrackingWidget() {
+  useEffect(() => {
+    const script = document.createElement("script");
+
+    script.src = "https://muntra-dev.github.io/index.js";
+    script.async = true;
+
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <div className='auto-margin page-body'>
       <div className='flex-column'>

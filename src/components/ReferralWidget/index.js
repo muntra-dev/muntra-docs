@@ -16,7 +16,7 @@ function ReferralWidget() {
         <h1 className='mainHeader'>Muntra Referral Widget Docs</h1>
         <h1>Information</h1>
         <b>
-          IMPORTANT: MUNTRA PERSONEL MUST WHITELIST YOUR DOMAIN FOR THE WIDGET
+          IMPORTANT: MUNTRA PERSONNEL MUST WHITELIST YOUR DOMAIN FOR THE WIDGET
           TO WORK
         </b>
         <p>
@@ -27,8 +27,7 @@ function ReferralWidget() {
         <h2>Deployment to website</h2>
         <ol>
           <li className='has-line-data' data-line-start={8} data-line-end={9}>
-            Add the div below to the place on the website where you want the
-            widget
+            Add the widget's div element where it should be visible on the page
           </li>
           <li className='has-line-data' data-line-start={9} data-line-end={10}>
             Add the script below to right before the closing body tag

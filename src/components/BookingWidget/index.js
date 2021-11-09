@@ -18,13 +18,14 @@ function BookingWidget() {
           <h1 className='mainHeader'>Muntra Booking Widget Docs</h1>
           <h1>Information</h1>
           <b>
-            IMPORTANT: MUNTRA PERSONEL MUST WHITELIST YOUR DOMAIN FOR THE WIDGET
-            TO WORK
+            IMPORTANT: MUNTRA PERSONNEL MUST WHITELIST YOUR DOMAIN FOR THE
+            WIDGET TO WORK
           </b>
           <p>
-            The Booking Widget is a way to integrate your website directly to
-            Muntra. This means that your patients will be able to book times or
-            send booking request from your own website directly into Muntra.
+            The Booking Widget integrates the clinic's website directly into the
+            calendar in Muntra. This enables patients to book times or send
+            booking requests from the clinic's own website directly into the
+            clinic's Muntra calendar.
           </p>
           <h2>Deployment to website</h2>
           <ol>
