@@ -51,8 +51,8 @@ function BookingWidget() {
               data-line-end='34'
             >
               &#x3C;div class=&#x22;muntra-widget primary&#x22;
-              key=&#x22;0&#x22; muntra_clinic_id=&#x22;16&#x22;
-              muntra_referral_source=&#x22;sveatandklinik.se&#x22;&#x3E;&#x3C;/div&#x3E;
+              key=&#x22;0&#x22; muntra_clinic_id=&#x22;YOUR_CLINIC_ID&#x22;
+              muntra_referral_source=&#x22;YourClinicDomain.com&#x22;&#x3E;&#x3C;/div&#x3E;
             </code>
           </pre>
           <div
@@ -72,8 +72,8 @@ function BookingWidget() {
             >
               &#x3C;div class=&#x22;muntra-widget secondary&#x22;
               key=&#x22;1&#x22; muntra_caregiver_id=&#x22;2852&#x22;
-              muntra_clinic_id=&#x22;16&#x22;
-              muntra_referral_source=&#x22;sveatandklinik.se&#x22;
+              muntra_clinic_id=&#x22;YOUR_CLINIC_ID&#x22;
+              muntra_referral_source=&#x22;YourClinicDomain.com&#x22;
               muntra_button_text=&#x22;Boka specifik
               behandlare&#x22;&#x3E;&#x3C;/div&#x3E;
             </code>
@@ -97,8 +97,8 @@ function BookingWidget() {
             >
               &#x3C;div class=&#x22;muntra-widget secondary&#x22;
               key=&#x22;2&#x22; muntra_role_id=&#x22;4&#x22;
-              muntra_clinic_id=&#x22;16&#x22;
-              muntra_referral_source=&#x22;sveatandklinik.se&#x22;
+              muntra_clinic_id=&#x22;YOUR_CLINIC_ID&#x22;
+              muntra_referral_source=&#x22;YourClinicDomain.com&#x22;
               muntra_button_text=&#x22;Boka
               tandhygienist&#x22;&#x3E;&#x3C;/div&#x3E;
             </code>
@@ -120,8 +120,8 @@ function BookingWidget() {
             >
               &#x3C;div class=&#x22;muntra-widget secondary&#x22;
               key=&#x22;3&#x22; muntra_role_id=&#x22;3&#x22;
-              muntra_clinic_id=&#x22;16&#x22;
-              muntra_referral_source=&#x22;sveatandklinik.se&#x22;
+              muntra_clinic_id=&#x22;YOUR_CLINIC_ID&#x22;
+              muntra_referral_source=&#x22;YourClinicDomain.com&#x22;
               muntra_button_text=&#x22;Boka
               tandl&#xE4;kartid&#x22;&#x3E;&#x3C;/div&#x3E;
             </code>
@@ -144,9 +144,9 @@ function BookingWidget() {
               data-line-end='34'
             >
               &#x3C;div class=&#x22;muntra-widget&#x22; key=&#x22;4&#x22;
-              muntra_clinic_id=&#x22;16&#x22; muntra_procedure_id=&#x22;4&#x22;
-              muntra_role_id=&#x22;3&#x22;
-              muntra_referral_source=&#x22;sveatandklinik.se&#x22;
+              muntra_clinic_id=&#x22;YOUR_CLINIC_ID&#x22;
+              muntra_procedure_id=&#x22;4&#x22; muntra_role_id=&#x22;3&#x22;
+              muntra_referral_source=&#x22;YourClinicDomain.com&#x22;
               muntra_button_text=&#x22;Boka akut
               tandl&#xE4;kartid&#x22;&#x3E;&#x3C;/div&#x3E;
             </code>
@@ -169,8 +169,9 @@ function BookingWidget() {
             >
               &#x3C;div class=&#x22;muntra-widget secondary&#x22;
               key=&#x22;5&#x22; muntra_procedure_id=&#x22;9&#x22;
-              muntra_role_id=&#x22;4&#x22; muntra_clinic_id=&#x22;16&#x22;
-              muntra_referral_source=&#x22;sveatandklinik.se&#x22;
+              muntra_role_id=&#x22;4&#x22;
+              muntra_clinic_id=&#x22;YOUR_CLINIC_ID&#x22;
+              muntra_referral_source=&#x22;YourClinicDomain.com&#x22;
               muntra_button_text=&#x22;Boka tandblekningstid (hos
               tandhygienist)&#x22;&#x3E;&#x3C;/div&#x3E;
             </code>
@@ -195,8 +196,8 @@ function BookingWidget() {
                 data-line-end='34'
               >
                 &#x3C;div class=&#x22;muntra-widget without-modal&#x22;
-                key=&#x22;6&#x22; muntra_clinic_id=&#x22;16&#x22;
-                muntra_referral_source=&#x22;sveatandklinik.se&#x22;
+                key=&#x22;6&#x22; muntra_clinic_id=&#x22;YOUR_CLINIC_ID&#x22;
+                muntra_referral_source=&#x22;YourClinicDomain.com&#x22;
                 muntra_without_modal=&#x22;true&#x22;&#x3E;&#x3C;/div&#x3E;
               </code>
             </pre>
@@ -315,8 +316,9 @@ function BookingWidget() {
             data-line-end='28'
           >
             &lt;div class=&quot;muntra-widget&quot; key=&quot;0&quot;
-            muntra_clinic_id=&quot;16&quot; muntra_caregiver_id=&quot;2&quot;
-            muntra_referral_source=&quot;referral-link.se&quot;&gt;
+            muntra_clinic_id=&quot;YOUR_CLINIC_ID&quot;
+            muntra_caregiver_id=&quot;2&quot;
+            muntra_referral_source=&quot;YourClinicDomain.com&quot;&gt;
           </code>
         </pre>
         <p className='has-line-data' data-line-start='29' data-line-end='30'>
@@ -348,9 +350,9 @@ function BookingWidget() {
             &lt;body&gt; &lt;div class=&quot;auto-margin&quot;&gt; &lt;div
             class=&quot;flex-column right-align&quot;&gt; &lt;h3&gt;Alla
             behandlare&lt;/h3&gt; &lt;div class=&quot;muntra-widget
-            primary&quot; key='1' muntra_clinic_id=&quot;16&quot;
-            muntra_referral_source=&quot;referral-link.se&quot;&gt; &lt;/div&gt;
-            &lt;/div&gt; &lt;/div&gt; &lt;script
+            primary&quot; key='1' muntra_clinic_id=&quot;YOUR_CLINIC_ID&quot;
+            muntra_referral_source=&quot;YourClinicDomain.com&quot;&gt;
+            &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;script
             type=&quot;text/javascript&quot;
             src=&quot;https://muntra-dev.github.io/index.js&quot;&gt;&lt;/script&gt;
             &lt;/body&gt;

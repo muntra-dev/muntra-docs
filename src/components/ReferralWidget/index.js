@@ -43,7 +43,7 @@ function ReferralWidget() {
               data-line-end={17}
             >
               &#x3C;div class=&#x22;muntra-referral-widget&#x22;
-              muntra_clinic_id=&#x22;1&#x22;&#x3E;&#x3C;/div&#x3E;
+              muntra_clinic_id=&#x22;YOUR_CLINIC_ID&#x22;&#x3E;&#x3C;/div&#x3E;
             </code>
           </pre>
           <div className='muntra-referral-widget' muntra_clinic_id='1'></div>
@@ -95,7 +95,7 @@ function ReferralWidget() {
           >
             {"  "}&lt;div{"\n"}
             {"   "}class="muntra-referral-widget"{"\n"}
-            {"   "}muntra_clinic_id="1"{"\n"}
+            {"   "}muntra_clinic_id="YOUR_CLINIC_ID"{"\n"}
             {"  "}/&gt;{"\n"}
           </code>
         </pre>
