@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/muntra-docs/static/css/main.b7451884.chunk.css",
+    "main.css": "/muntra-docs/static/css/main.45b16471.chunk.css",
     "main.js": "/muntra-docs/static/js/main.8c75cb00.chunk.js",
     "main.js.map": "/muntra-docs/static/js/main.8c75cb00.chunk.js.map",
     "runtime-main.js": "/muntra-docs/static/js/runtime-main.3712e23d.js",
@@ -8,13 +8,13 @@
     "static/js/2.4c4f86c3.chunk.js": "/muntra-docs/static/js/2.4c4f86c3.chunk.js",
     "static/js/2.4c4f86c3.chunk.js.map": "/muntra-docs/static/js/2.4c4f86c3.chunk.js.map",
     "index.html": "/muntra-docs/index.html",
-    "static/css/main.b7451884.chunk.css.map": "/muntra-docs/static/css/main.b7451884.chunk.css.map",
+    "static/css/main.45b16471.chunk.css.map": "/muntra-docs/static/css/main.45b16471.chunk.css.map",
     "static/js/2.4c4f86c3.chunk.js.LICENSE.txt": "/muntra-docs/static/js/2.4c4f86c3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3712e23d.js",
     "static/js/2.4c4f86c3.chunk.js",
-    "static/css/main.b7451884.chunk.css",
+    "static/css/main.45b16471.chunk.css",
     "static/js/main.8c75cb00.chunk.js"
   ]
 }
