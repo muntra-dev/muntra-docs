@@ -1,5 +1,6 @@
 import BookingWidget from "./BookingWidget";
 import BookingWidgetSVG from "../assets/svg/BookingWidgetSVG";
+import HelpMenu from "./HelpMenu";
 import LeftArrowSVG from "../assets/svg/LeftArrowSVG";
 import React, { useState } from "react";
 import ReferralWidget from "./ReferralWidget";
@@ -8,9 +9,12 @@ import TrackingWidget from "./TrackingWidget";
 import TrackingWidgetSVG from "../assets/svg/TrackingWidgetSVG";
 
 function App() {
+  const [isHelpMenuOpen, setIsHelpMenuOpen] = useState(false);
+  const [showBooking, setShowBooking] = useState(false);
   const [showPixel, setShowPixel] = useState(false);
   const [showReferral, setShowReferral] = useState(false);
-  const [showBooking, setShowBooking] = useState(false);
+
+  const switchHelpMenu = () => setIsHelpMenuOpen(!isHelpMenuOpen);
 
   const isAtPage = showBooking || showReferral || showPixel;
 
@@ -59,6 +63,15 @@ function App() {
           </div>
         </div>
       )}
+      <div className='HelpButtonContainer'>
+        {" "}
+        <button className='HelpButton' onClick={switchHelpMenu}>
+          {" "}
+          Help{" "}
+        </button>{" "}
+      </div>
+      <HelpMenu handleClick={switchHelpMenu} isOpen={isHelpMenuOpen} />
+
       {showBooking && <BookingWidget />}
       {showPixel && <TrackingWidget />}
       {showReferral && <ReferralWidget />}
