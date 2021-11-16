@@ -62,7 +62,7 @@ code {
   bottom: 150px;
   position: fixed;
   right: 18px;
-  z-index: 100015;
+  z-index: 100000000;
 }
 
 .HelpButton {
