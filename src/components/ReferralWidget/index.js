@@ -36,6 +36,7 @@ function ReferralWidget() {
 
         <div className='flex-column' style={{ marginBottom: "25px" }}>
           <h3 style={{ marginTop: "50px" }}>Widget placement example</h3>
+
           <pre>
             <code
               className='has-line-data'
@@ -46,7 +47,8 @@ function ReferralWidget() {
               muntra_clinic_id=&#x22;YOUR_CLINIC_ID&#x22;&#x3E;&#x3C;/div&#x3E;
             </code>
           </pre>
-          <div className='muntra-referral-widget' muntra_clinic_id='1'></div>
+          <h3>BEWARE! Live example for GHP Stockholm Clinic</h3>
+          <div className='muntra-referral-widget' muntra_clinic_id='51'></div>
         </div>
         <h3>
           Import the widget code with the script right before the closing body
