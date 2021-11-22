@@ -1,5 +1,5 @@
 html {
-  /* background-image: url(./assets/MuntraBackground.png);
+  /* background-image: url(./assets/flow.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 100%; */
@@ -8,6 +8,13 @@ html {
 body {
   margin: 0px !important;
   height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #115672;
 }
 
 code {
@@ -33,7 +40,12 @@ code {
 }
 
 #root {
-  height: 100vh;
+  /* height: 100vh; */
+}
+
+.backButtonContainer {
+  position: sticky;
+  top: 0px;
 }
 
 .backButton {
@@ -172,6 +184,11 @@ code {
   padding: 0.5em;
 }
 
+.spaceEvenAndAlignCenter {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .justAndAlignCenter {
   justify-content: center;
   align-items: center;
@@ -190,14 +207,20 @@ code {
   text-decoration: underline !important;
 }
 
+.logo {
+  cursor: pointer;
+  position: absolute;
+  width: 250px;
+  right: 30px;
+  top: 30px;
+}
+
 .noTextDecoration {
   text-decoration: none !important;
 }
 
 .SvgSize {
   cursor: pointer;
-  height: 500px;
-  width: auto;
 }
 
 .mainHeader {
@@ -205,7 +228,7 @@ code {
 }
 
 .muntraBackground {
-  /* background-image: url(./assets/MuntraBackground.png); */
+  background-image: url(./assets/Flow.png);
   background-color: #f6f9fc;
   background-size: cover;
   background-repeat: no-repeat;
