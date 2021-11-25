@@ -50,6 +50,7 @@ function ReferralWidget() {
           <h3>BEWARE! Live example for GHP Stockholm Clinic</h3>
           <div
             className='muntra-referral-widget'
+            disable_autofocus='yes'
             hide_help='yes'
             muntra_clinic_id='51'
           ></div>
@@ -96,6 +97,11 @@ function ReferralWidget() {
         <ul>
           <li className='has-line-data' data-line-start={6} data-line-end={7}>
             <code>hide_help</code>: “yes” (Hides the muntra help button if used)
+          </li>
+          <li className='has-line-data' data-line-start={6} data-line-end={7}>
+            <code>disable_autofocus</code>: “yes” (Disables autofocus for the
+            SSN input/Stops the widget from auto scrolling into view when
+            loaded)
           </li>
         </ul>
         <p className='has-line-data' data-line-start={9} data-line-end={10}>
