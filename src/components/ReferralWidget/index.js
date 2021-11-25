@@ -90,6 +90,14 @@ function ReferralWidget() {
             <code>muntra_clinic_id</code>: “clinic_id”.
           </li>
         </ul>
+        <p className='has-line-data' data-line-start={4} data-line-end={5}>
+          Optional attributes:
+        </p>
+        <ul>
+          <li className='has-line-data' data-line-start={6} data-line-end={7}>
+            <code>hide_help</code>: “yes” (Hides the muntra help button if used)
+          </li>
+        </ul>
         <p className='has-line-data' data-line-start={9} data-line-end={10}>
           Example:
         </p>
