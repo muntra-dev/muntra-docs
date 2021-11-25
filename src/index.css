@@ -8,13 +8,18 @@ html {
 body {
   margin: 0px !important;
   height: 100vh;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap");
 
 h1,
 h2,
 h3,
 h4 {
   color: #115672;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 code {
@@ -108,7 +113,7 @@ code {
   transition: opacity 150ms, visibility 150ms, width 150ms;
   visibility: hidden;
   width: 0;
-  z-index: 111100;
+  z-index: 111111111;
 }
 
 .HelpMenuContainerOpen {

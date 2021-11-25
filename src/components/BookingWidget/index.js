@@ -28,6 +28,7 @@ function BookingWidget() {
             clinic's Muntra calendar.
           </p>
           <h2>Deployment to website</h2>
+          <h3>BEWARE! All examples are LIVE examples for Svea Tandklinik</h3>
           <ol>
             <li className='has-line-data' data-line-start={8} data-line-end={9}>
               Add the widget's div element where it should be visible on the

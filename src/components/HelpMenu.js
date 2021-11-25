@@ -32,6 +32,28 @@ const HelpMenu = ({ isOpen, handleClick }) => {
         <div style={{ margin: "28px" }}>
           <div className='Contacts'>
             <div style={{ margin: "28px" }}>
+              <h3 className='HeadingStyle'> Educational </h3>
+              <h4 className='HeadingStyle'>
+                Need help understanding HTML and CSS?
+              </h4>
+              <ul>
+                <li>
+                  <a
+                    className='Link noTextDecoration'
+                    href='https://www.freecodecamp.org/learn/responsive-web-design/'
+                  >
+                    FreeCodeCamp
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className='Link noTextDecoration'
+                    href='https://www.w3schools.com/css/default.asp'
+                  >
+                    W3 Schools
+                  </a>
+                </li>
+              </ul>
               <h3 className='HeadingStyle'> Support </h3>
               <ul>
                 <li>
