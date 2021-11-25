@@ -48,7 +48,11 @@ function ReferralWidget() {
             </code>
           </pre>
           <h3>BEWARE! Live example for GHP Stockholm Clinic</h3>
-          <div className='muntra-referral-widget' muntra_clinic_id='51'></div>
+          <div
+            className='muntra-referral-widget'
+            hide_help='yes'
+            muntra_clinic_id='51'
+          ></div>
         </div>
         <h3>
           Import the widget code with the script right before the closing body
