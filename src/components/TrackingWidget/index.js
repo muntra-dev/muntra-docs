@@ -106,7 +106,7 @@ function TrackingWidget() {
             widget you need it whitelisted for
           </li>
         </ol>
-        <h3>Still can't find the problem?</h3>
+        <h3>Still can't find the problem or any solution?</h3>
         <p>
           Check out the blue help button in the lower right corner of this site
           for additional help

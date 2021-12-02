@@ -177,6 +177,94 @@ function ReferralWidget() {
             {"\n"}
           </code>
         </pre>
+        <h1>Troubleshooting</h1>
+        <h2>Checklist</h2>
+        <ol>
+          <li>
+            Have you entered the correct <code>muntra_clinic_id</code> in place
+            of <b>YOUR_CLINIC_ID</b> from the example above?
+          </li>
+          <li>
+            Has the widget been whitelisted? See{" "}
+            <a href='#checkingWhitelisting'>Checking whitelisting</a> to see how
+            to find the exact format for your domain
+          </li>
+          <li>
+            Have you placed the script after the div from the examples above?
+          </li>
+          <li>
+            Is the div placed inside an iFrame? If yes then it won't work. See{" "}
+            <a href='#checkingForIframe'>Checking for iFrame</a> to see how to
+            check this
+          </li>
+          <li>
+            Are you trying to test the widget in a test enviroment that has a
+            different domain name than the live website? Then it wont work
+            unless that domain is also whitelisted
+          </li>
+        </ol>
+        <h2 id='checkingWhitelisting'>Checking whitelisting</h2>
+        <ol>
+          <li>Open the website which you've placed the widget on</li>
+          <li>Right click on the website</li>
+          <p>
+            (Next step varies for different browsers, google "How to open
+            inspector on BROWSER_NAME")
+          </p>
+          <li>
+            Select <b>Inspect</b> or similar option
+          </li>
+          <li>
+            Select the <b>Console</b> tab
+          </li>
+          <li>
+            Look for red errors containing text regarding <b>CORS ERROR</b> and
+            find the link which follows the word <b>origin</b>
+          </li>
+          <li>
+            Copy the link and send it to muntra personnel, also include which
+            widget you need it whitelisted for
+          </li>
+        </ol>
+        <h2 id='checkingForIframe'>Checking for iframe</h2>
+        <ol>
+          <li>Open the website which you've placed the widget on</li>
+          <li>Right click on the website</li>
+          <p>
+            (Next step varies for different browsers, google "How to open
+            inspector on BROWSER_NAME")
+          </p>
+          <li>
+            Select <b>Inspect</b> or similar option
+          </li>
+          <li>
+            Select the <b>Elements</b> tab
+          </li>
+          <li>
+            Click <b>CTRL</b> and <b>F</b> at the same time on your keyboard
+          </li>
+          <li>
+            Write <b>muntra</b> in the search field
+          </li>
+          <li>
+            Press the <b>ENTER</b> button on your keyboard until you find the
+            muntra widget div
+          </li>
+          <li>
+            Check if the widget is enclosed by tags that looks something like
+            this <code>{`<iframe><div class="muntra-widget"...</iframe>`}</code>{" "}
+            ("..." is a placeholder for the rest of the widget HTML code)
+          </li>
+          <li>
+            If yes, then the iframe needs to be removed and replaced by i.e. div
+            tags
+          </li>
+        </ol>
+        <h2>Still can't find the problem or any solution?</h2>
+        <p>
+          Check out the blue help button in the lower right corner of this site
+          for additional help
+        </p>
       </>
     </div>
   );
