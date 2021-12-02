@@ -63,6 +63,54 @@ function TrackingWidget() {
             </code>
           </pre>
         </ol>
+        <h2>Troubleshooting</h2>
+        <h3>Checklist</h3>
+        <ol>
+          <li>
+            Have you entered the correct <code>pixel_id</code> in place of{" "}
+            <b>THIS_IS_AN_EXAMPLE</b> from the example above?
+          </li>
+          <li>
+            Have you placed the script after the div from the examples above?
+          </li>
+          <li>
+            Is the div placed inside the body of the site in a place which makes
+            it present across the whole site?
+          </li>
+          <li>
+            Are you trying to test the widget in a test enviroment that has a
+            different domain name than the live website? Then it wont work
+            unless that domain is also whitelisted
+          </li>
+        </ol>
+        <h3>Checking whitelisting</h3>
+        <ol>
+          <li>Open the website which you've placed the pixel on</li>
+          <li>Right click on the website</li>
+          <p>
+            (Next step varies for different browsers, google "How to open
+            inspector on BROWSER_NAME")
+          </p>
+          <li>
+            Select <b>Inspect</b> or similar option
+          </li>
+          <li>
+            Select the <b>Console</b> tab
+          </li>
+          <li>
+            Look for red errors containing text regarding <b>CORS ERROR</b> and
+            find the link which follows the word <b>origin</b>
+          </li>
+          <li>
+            Copy the link and send it to muntra personnel, also include which
+            widget you need it whitelisted for
+          </li>
+        </ol>
+        <h3>Still can't find the problem?</h3>
+        <p>
+          Check out the blue help button in the lower right corner of this site
+          for additional help
+        </p>
       </div>
     </div>
   );
