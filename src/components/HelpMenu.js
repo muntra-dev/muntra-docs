@@ -58,17 +58,6 @@ const HelpMenu = ({ isOpen, handleClick }) => {
               <ul>
                 <li>
                   {" "}
-                  <a className='Link noTextDecoration' href='tel:+46840906890'>
-                    {" "}
-                    08-40 90 68 90{" "}
-                  </a>{" "}
-                  <span style={{ color: "#808080", fontSize: "12px" }}>
-                    {" "}
-                    (8-12 / 13-17 weekdays){" "}
-                  </span>
-                </li>
-                <li>
-                  {" "}
                   <a
                     className='Link noTextDecoration'
                     href='mailto:support@muntra.se'
