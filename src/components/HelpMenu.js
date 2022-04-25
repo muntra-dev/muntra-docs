@@ -102,9 +102,8 @@ const HelpMenu = ({ isOpen, handleClick }) => {
           }}
         >
           {" "}
-          Muntra is an approved medical device product. All data transfered is
-          encrypted and is treated in regard to Swedish data and patient
-          security laws.{" "}
+          Muntra is an approved medical device. All data transferred is
+          encrypted and handled in line with the Swedish Patient Data Act.{" "}
         </div>
       </div>
     </>

@@ -1,8 +1,4 @@
 html {
-  /* background-image: url(./assets/flow.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-size: 100%; */
 }
 
 body {
@@ -45,7 +41,6 @@ code {
 }
 
 #root {
-  /* height: 100vh; */
 }
 
 .backButtonContainer {
