@@ -210,6 +210,54 @@ function BookingWidget() {
               muntra_without_modal="true"
             ></div>
           </div>
+          <div>
+            <h3>A widget without modal window, in Norwegian</h3>
+            <pre>
+              <code
+                className="has-line-data"
+                data-line-start="32"
+                data-line-end="34"
+              >
+                &#x3C;div class=&#x22;muntra-widget without-modal&#x22;
+                key=&#x22;7&#x22; muntra_clinic_id=&#x22;YOUR_CLINIC_ID&#x22;
+                muntra_locale%3D%22no-no%22
+                muntra_referral_source=&#x22;YourClinicDomain.com&#x22;
+                muntra_without_modal=&#x22;true&#x22;&#x3E;&#x3C;/div&#x3E;
+              </code>
+            </pre>
+            <div
+              class="muntra-widget without-modal"
+              key="7"
+              muntra_clinic_id="16"
+              muntra_locale="no-no"
+              muntra_referral_source="sveatandklinik.se"
+              muntra_without_modal="true"
+            ></div>
+          </div>
+          <div>
+            <h3>A widget without modal window, without caregivers</h3>
+            <pre>
+              <code
+                className="has-line-data"
+                data-line-start="32"
+                data-line-end="34"
+              >
+                &lt;div class=&quot;muntra-widget without-modal&quot;
+                key=&quot;6&quot; muntra_clinic_id==&#x22;YOUR_CLINIC_ID&#x22;
+                muntra_referral_source=&#x22;YourClinicDomain.com&#x22;
+                muntra_without_modal=&quot;true&quot;
+                show_caregiver=&quot;false&quot; &gt; &lt;/div&gt;
+              </code>
+            </pre>
+            <div
+              class="muntra-widget without-modal"
+              key="8"
+              muntra_clinic_id="16"
+              muntra_referral_source="sveatandklinik.se"
+              muntra_without_modal="true"
+              show_caregiver="false"
+            ></div>
+          </div>
           <h3>
             Important! Import the widget code right before the closing body tag
             (&#x3C;/body&#x3E;)
