@@ -11,7 +11,7 @@ const HelpMenu = ({ isOpen, handleClick }) => {
         <div style={{ margin: "5px 28px" }}>
           {" "}
           <div
-            className='row'
+            className="row"
             style={{
               height: "50px",
               justifyContent: "flex-end",
@@ -19,69 +19,69 @@ const HelpMenu = ({ isOpen, handleClick }) => {
             }}
           >
             {" "}
-            <div className='UploadIconContainer' onClick={handleClick}>
-              <div className='Uploadlabel'>
+            <div className="UploadIconContainer" onClick={handleClick}>
+              <div className="Uploadlabel">
                 <div style={{ margin: "auto", width: "13px" }}>
                   <CloseIcon />
                 </div>
               </div>
-              <div className='HintToBottom'>Add</div>
+              <div className="HintToBottom">Add</div>
             </div>{" "}
           </div>{" "}
         </div>
         <div style={{ margin: "28px" }}>
-          <div className='Contacts'>
+          <div className="Contacts">
             <div style={{ margin: "28px" }}>
-              <h3 className='HeadingStyle'> Educational </h3>
-              <h4 className='HeadingStyle'>
+              <h3 className="HeadingStyle"> Educational </h3>
+              <h4 className="HeadingStyle">
                 Need help understanding HTML and CSS?
               </h4>
               <ul>
                 <li>
                   <a
-                    className='Link noTextDecoration'
-                    href='https://www.freecodecamp.org/learn/responsive-web-design/'
+                    className="Link noTextDecoration"
+                    href="https://www.freecodecamp.org/learn/responsive-web-design/"
                   >
                     FreeCodeCamp
                   </a>
                 </li>
                 <li>
                   <a
-                    className='Link noTextDecoration'
-                    href='https://www.w3schools.com/css/default.asp'
+                    className="Link noTextDecoration"
+                    href="https://www.w3schools.com/css/default.asp"
                   >
                     W3 Schools
                   </a>
                 </li>
               </ul>
-              <h3 className='HeadingStyle'> Support </h3>
+              <h3 className="HeadingStyle"> Support </h3>
               <ul>
                 <li>
                   {" "}
                   <a
-                    className='Link noTextDecoration'
-                    href='mailto:support@muntra.se'
+                    className="Link noTextDecoration"
+                    href="mailto:support@muntra.se"
                   >
                     {" "}
                     support@muntra.se{" "}
                   </a>{" "}
                 </li>
               </ul>
-              <h4 className='HeadingStyle'> Screenshare with AnyDesk </h4>
+              <h4 className="HeadingStyle"> Screenshare with AnyDesk </h4>
               <ul>
                 <li>
                   {" "}
                   <a
-                    className='Link noTextDecoration'
-                    href='https://download.anydesk.com/AnyDesk.exe'
+                    className="Link noTextDecoration"
+                    href="https://download.anydesk.com/AnyDesk.exe"
                   >
                     {" "}
                     Windows{" "}
                   </a>{" "}
                   |{" "}
                   <a
-                    className='Link noTextDecoration'
-                    href='https://download.anydesk.com/anydesk.dmg'
+                    className="Link noTextDecoration"
+                    href="https://download.anydesk.com/anydesk.dmg"
                   >
                     {" "}
                     Mac{" "}

@@ -29,44 +29,44 @@ function App() {
     <div style={{ height: "100vh" }}>
       {isAtPage && (
         <div
-          role='button'
+          role="button"
           onClick={resetPageStates}
-          className='backButtonContainer'
+          className="backButtonContainer"
         >
-          <LeftArrowSVG classProp='backButton' />
+          <LeftArrowSVG classProp="backButton" />
         </div>
       )}
       {!showBooking && !showPixel && !showReferral && (
         <>
-          <a href='https://about.muntra.se'>
-            <img alt='Muntra Logo' className='logo' src={muntraLogo} />
+          <a href="https://about.muntra.se">
+            <img alt="Muntra Logo" className="logo" src={muntraLogo} />
           </a>
-          <div className='flex spaceEvenAndAlignCenter muntraBackground mobileFlexCol'>
-            <div className='flexCol justAndAlignCenter'>
-              <TrackingWidgetSVG onClick={setShowPixel} classProp='SvgSize' />
+          <div className="flex spaceEvenAndAlignCenter muntraBackground mobileFlexCol">
+            <div className="flexCol justAndAlignCenter">
+              <TrackingWidgetSVG onClick={setShowPixel} classProp="SvgSize" />
               <button
-                className='SelectButton'
+                className="SelectButton"
                 onClick={() => setShowPixel(true)}
               >
                 Muntra Pixel
               </button>
             </div>
-            <div className='flexCol justAndAlignCenter'>
-              <BookingWidgetSVG classProp='SvgSize' onClick={setShowBooking} />
+            <div className="flexCol justAndAlignCenter">
+              <BookingWidgetSVG classProp="SvgSize" onClick={setShowBooking} />
               <button
-                className='SelectButton'
+                className="SelectButton"
                 onClick={() => setShowBooking(true)}
               >
                 Booking Widget
               </button>
             </div>
-            <div className='flexCol justAndAlignCenter'>
+            <div className="flexCol justAndAlignCenter">
               <ReferralWidgetSVG
-                classProp='SvgSize'
+                classProp="SvgSize"
                 onClick={setShowReferral}
               />
               <button
-                className='SelectButton'
+                className="SelectButton"
                 onClick={() => setShowReferral(true)}
               >
                 Referral Widget
@@ -75,9 +75,9 @@ function App() {
           </div>
         </>
       )}
-      <div className='HelpButtonContainer'>
+      <div className="HelpButtonContainer">
         {" "}
-        <button className='HelpButton' onClick={switchHelpMenu}>
+        <button className="HelpButton" onClick={switchHelpMenu}>
           {" "}
           Help{" "}
         </button>{" "}

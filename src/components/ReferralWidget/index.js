@@ -11,9 +11,9 @@ function ReferralWidget() {
   }, []);
 
   return (
-    <div className='auto-margin page-body'>
-      <div className='flex-column'>
-        <h1 className='mainHeader'>Muntra Referral Widget Docs</h1>
+    <div className="auto-margin page-body">
+      <div className="flex-column">
+        <h1 className="mainHeader">Muntra Referral Widget Docs</h1>
         <h1>Information</h1>
         <b>
           IMPORTANT: MUNTRA PERSONNEL MUST WHITELIST YOUR DOMAIN FOR THE WIDGET
@@ -26,20 +26,20 @@ function ReferralWidget() {
         </p>
         <h2>Deployment to website</h2>
         <ol>
-          <li className='has-line-data' data-line-start={8} data-line-end={9}>
+          <li className="has-line-data" data-line-start={8} data-line-end={9}>
             Add the widget's div element where it should be visible on the page
           </li>
-          <li className='has-line-data' data-line-start={9} data-line-end={10}>
+          <li className="has-line-data" data-line-start={9} data-line-end={10}>
             Add the script below to right before the closing body tag
           </li>
         </ol>
 
-        <div className='flex-column' style={{ marginBottom: "25px" }}>
+        <div className="flex-column" style={{ marginBottom: "25px" }}>
           <h3 style={{ marginTop: "50px" }}>Widget placement example</h3>
 
           <pre>
             <code
-              className='has-line-data'
+              className="has-line-data"
               data-line-start={12}
               data-line-end={17}
             >
@@ -49,10 +49,10 @@ function ReferralWidget() {
           </pre>
           <h3>BEWARE! Live example for GHP Stockholm Clinic</h3>
           <div
-            className='muntra-referral-widget'
-            disable_autofocus='yes'
-            hide_help='yes'
-            muntra_clinic_id='51'
+            className="muntra-referral-widget"
+            disable_autofocus="yes"
+            hide_help="yes"
+            muntra_clinic_id="51"
           ></div>
         </div>
         <h3>
@@ -61,7 +61,7 @@ function ReferralWidget() {
         </h3>
         <pre>
           <code
-            className='has-line-data'
+            className="has-line-data"
             data-line-start={12}
             data-line-end={17}
           >
@@ -73,43 +73,43 @@ function ReferralWidget() {
 
       <>
         {" "}
-        <h1 className='code-line' data-line-start={0} data-line-end={1}>
+        <h1 className="code-line" data-line-start={0} data-line-end={1}>
           Placing a widget on a page
         </h1>
-        <p className='has-line-data' data-line-start={2} data-line-end={3}>
+        <p className="has-line-data" data-line-start={2} data-line-end={3}>
           First, place the &lt;div&gt; tag in the site markup, with the
           following attributes:
         </p>
-        <p className='has-line-data' data-line-start={4} data-line-end={5}>
+        <p className="has-line-data" data-line-start={4} data-line-end={5}>
           Required attributes:
         </p>
         <ul>
-          <li className='has-line-data' data-line-start={6} data-line-end={7}>
+          <li className="has-line-data" data-line-start={6} data-line-end={7}>
             <code>class</code>: “muntra-referral-widget”,
           </li>
-          <li className='has-line-data' data-line-start={7} data-line-end={9}>
+          <li className="has-line-data" data-line-start={7} data-line-end={9}>
             <code>muntra_clinic_id</code>: “clinic_id”.
           </li>
         </ul>
-        <p className='has-line-data' data-line-start={4} data-line-end={5}>
+        <p className="has-line-data" data-line-start={4} data-line-end={5}>
           Optional attributes:
         </p>
         <ul>
-          <li className='has-line-data' data-line-start={6} data-line-end={7}>
+          <li className="has-line-data" data-line-start={6} data-line-end={7}>
             <code>hide_help</code>: “yes” (Hides the muntra help button if used)
           </li>
-          <li className='has-line-data' data-line-start={6} data-line-end={7}>
+          <li className="has-line-data" data-line-start={6} data-line-end={7}>
             <code>disable_autofocus</code>: “yes” (Disables autofocus for the
             SSN input/Stops the widget from auto scrolling into view when
             loaded)
           </li>
         </ul>
-        <p className='has-line-data' data-line-start={9} data-line-end={10}>
+        <p className="has-line-data" data-line-start={9} data-line-end={10}>
           Example:
         </p>
         <pre>
           <code
-            className='has-line-data'
+            className="has-line-data"
             data-line-start={12}
             data-line-end={17}
           >
@@ -119,12 +119,12 @@ function ReferralWidget() {
             {"  "}/&gt;{"\n"}
           </code>
         </pre>
-        <p className='has-line-data' data-line-start={18} data-line-end={19}>
+        <p className="has-line-data" data-line-start={18} data-line-end={19}>
           Secondly, place a tag:
         </p>
         <pre>
           <code
-            className='has-line-data'
+            className="has-line-data"
             data-line-start={21}
             data-line-end={23}
           >
@@ -134,15 +134,15 @@ function ReferralWidget() {
             {"\n"}
           </code>
         </pre>
-        <p className='has-line-data' data-line-start={23} data-line-end={24}>
+        <p className="has-line-data" data-line-start={23} data-line-end={24}>
           At the end of the body, to connect the widget to the page.
         </p>
-        <p className='has-line-data' data-line-start={25} data-line-end={26}>
+        <p className="has-line-data" data-line-start={25} data-line-end={26}>
           Expample of connecting widget to a page:
         </p>
         <pre>
           <code
-            className='has-line-data'
+            className="has-line-data"
             data-line-start={28}
             data-line-end={36}
           >
@@ -157,15 +157,15 @@ function ReferralWidget() {
             {"\n"} &lt;/body&gt;{"\n"}
           </code>
         </pre>
-        <h1 className='code-line' data-line-start={37} data-line-end={38}>
+        <h1 className="code-line" data-line-start={37} data-line-end={38}>
           Styling a widget window
         </h1>
-        <p className='has-line-data' data-line-start={39} data-line-end={40}>
+        <p className="has-line-data" data-line-start={39} data-line-end={40}>
           Use muntra-referral-widget styles to style the widget window:
         </p>
         <pre>
           <code
-            className='has-line-data'
+            className="has-line-data"
             data-line-start={41}
             data-line-end={46}
           >
@@ -186,7 +186,7 @@ function ReferralWidget() {
           </li>
           <li>
             Has the widget been whitelisted? See{" "}
-            <a href='#checkingWhitelisting'>Checking whitelisting</a> to see how
+            <a href="#checkingWhitelisting">Checking whitelisting</a> to see how
             to find the exact format for your domain
           </li>
           <li>
@@ -194,7 +194,7 @@ function ReferralWidget() {
           </li>
           <li>
             Is the div placed inside an iFrame? If yes then it won't work. See{" "}
-            <a href='#checkingForIframe'>Checking for iFrame</a> to see how to
+            <a href="#checkingForIframe">Checking for iFrame</a> to see how to
             check this
           </li>
           <li>
@@ -203,7 +203,7 @@ function ReferralWidget() {
             unless that domain is also whitelisted
           </li>
         </ol>
-        <h2 id='checkingWhitelisting'>Checking whitelisting</h2>
+        <h2 id="checkingWhitelisting">Checking whitelisting</h2>
         <ol>
           <li>Open the website which you've placed the widget on</li>
           <li>Right click on the website</li>
@@ -226,7 +226,7 @@ function ReferralWidget() {
             widget you need it whitelisted for
           </li>
         </ol>
-        <h2 id='checkingForIframe'>Checking for iframe</h2>
+        <h2 id="checkingForIframe">Checking for iframe</h2>
         <ol>
           <li>Open the website which you've placed the widget on</li>
           <li>Right click on the website</li>
