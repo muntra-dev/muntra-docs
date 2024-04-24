@@ -468,19 +468,23 @@ function BookingWidget() {
       <h1>Rescheduling / Confirmation</h1>
       <ol>
         <li>
-          After booking create patient will receive email with link which look
-          like{" "}
+          When a booking is created, the patient should receive an email with a
+          link that looks like{" "}
           <a href="https://www.YourClinicDomain.com?m_id=XXXXXXXXXX">
             https://www.YourClinicDomain.com?m_id=XXXXXXXXXX
           </a>{" "}
         </li>
         <li>
-          On opened link booking widget will show booking details with confirm
-          and reschedule buttons (keep attention, on booking creation
-          rescheduling should be allowed)
+          This link should lead to a page with the booking widget. When the
+          "m_id" query param is used, the widget shows booking details, and
+          confirmation and rescheduling buttons. Please note that there are
+          settings in the booking that allows or prevents rescheduling.
         </li>
-        <li>In case confirm - click confirmation button</li>
-        <li>In case reschedule - choose available time and confirm it</li>
+        <li>The confirmation button confirms the booking</li>
+        <li>
+          The rescheduling button displays a page for selecting and confirming
+          an available time
+        </li>
       </ol>
       <h1>Troubleshooting</h1>
       <h2>Checklist</h2>
