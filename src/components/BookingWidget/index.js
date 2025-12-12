@@ -237,7 +237,7 @@ function BookingWidget() {
             >
               &#x3C;div class=&#x22;muntra-widget without-modal&#x22;
               key=&#x22;7&#x22; muntra_clinic_id=&#x22;YOUR_CLINIC_ID&#x22;
-              muntra_locale%3D%22no-no%22
+              muntra_locale%3D%22nb-no%22
               muntra_referral_source=&#x22;YourClinicDomain.com&#x22;
               muntra_without_modal=&#x22;true&#x22;&#x3E;&#x3C;/div&#x3E;
             </code>
@@ -246,7 +246,7 @@ function BookingWidget() {
             class="muntra-widget without-modal"
             key="7"
             muntra_clinic_id="16"
-            muntra_locale="no-no"
+            muntra_locale="nb-no"
             muntra_referral_source="sveatandklinik.se"
             muntra_without_modal="true"
           ></div>
