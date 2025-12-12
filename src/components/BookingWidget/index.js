@@ -243,7 +243,7 @@ function BookingWidget() {
             </code>
           </pre>
           <div
-            class="muntra-widget without-modal"
+            className="muntra-widget without-modal"
             key="7"
             muntra_clinic_id="16"
             muntra_locale="nb-no"
@@ -267,7 +267,7 @@ function BookingWidget() {
             </code>
           </pre>
           <div
-            class="muntra-widget without-modal"
+            className="muntra-widget without-modal"
             key="8"
             muntra_clinic_id="16"
             muntra_referral_source="sveatandklinik.se"
