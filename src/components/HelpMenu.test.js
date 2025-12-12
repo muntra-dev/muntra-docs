@@ -10,23 +10,23 @@ describe('HelpMenu', () => {
 
   it('applies closed class when isOpen is false', () => {
     const mockHandleClick = jest.fn();
-    const { container } = render(<HelpMenu isOpen={false} handleClick={mockHandleClick} />);
-    const menuContainer = container.querySelector('.HelpMenuContainer');
+    render(<HelpMenu isOpen={false} handleClick={mockHandleClick} />);
+    const menuContainer = screen.getByRole('dialog', { name: 'Help menu' });
     expect(menuContainer).toBeInTheDocument();
     expect(menuContainer).not.toHaveClass('HelpMenuContainerOpen');
   });
 
   it('applies open class when isOpen is true', () => {
     const mockHandleClick = jest.fn();
-    const { container } = render(<HelpMenu isOpen={true} handleClick={mockHandleClick} />);
-    const menuContainer = container.querySelector('.HelpMenuContainer');
+    render(<HelpMenu isOpen={true} handleClick={mockHandleClick} />);
+    const menuContainer = screen.getByRole('dialog', { name: 'Help menu' });
     expect(menuContainer).toHaveClass('HelpMenuContainerOpen');
   });
 
   it('calls handleClick when close icon is clicked', () => {
     const mockHandleClick = jest.fn();
-    const { container } = render(<HelpMenu isOpen={true} handleClick={mockHandleClick} />);
-    const closeButton = container.querySelector('.UploadIconContainer');
+    render(<HelpMenu isOpen={true} handleClick={mockHandleClick} />);
+    const closeButton = screen.getByRole('button', { name: 'Close help menu' });
     fireEvent.click(closeButton);
     expect(mockHandleClick).toHaveBeenCalledTimes(1);
   });
@@ -79,8 +79,8 @@ describe('HelpMenu', () => {
 
   it('renders CloseIcon component', () => {
     const mockHandleClick = jest.fn();
-    const { container } = render(<HelpMenu isOpen={true} handleClick={mockHandleClick} />);
-    const svg = container.querySelector('svg');
+    render(<HelpMenu isOpen={true} handleClick={mockHandleClick} />);
+    const svg = screen.getByRole('img', { name: 'Close' });
     expect(svg).toBeInTheDocument();
   });
 });

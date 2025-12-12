@@ -6,6 +6,8 @@ const HelpMenu = ({ isOpen, handleClick }) => {
     <>
       <div
         className={`HelpMenuContainer${isOpen ? " HelpMenuContainerOpen" : ""}`}
+        role="dialog"
+        aria-label="Help menu"
       >
         <div style={{ margin: "5px 28px" }}>
           {" "}
@@ -18,8 +20,8 @@ const HelpMenu = ({ isOpen, handleClick }) => {
             }}
           >
             {" "}
-            <div className="UploadIconContainer" onClick={handleClick}>
-              <div className="Uploadlabel">
+            <div className="CloseButtonContainer" onClick={handleClick} role="button" aria-label="Close help menu">
+              <div className="CloseButtonLabel">
                 <div style={{ margin: "auto", width: "13px" }}>
                   <CloseIcon />
                 </div>

@@ -39,6 +39,7 @@ describe('TrackingWidget', () => {
 
   it('adds script to document body on mount', () => {
     render(<TrackingWidget />);
+    // eslint-disable-next-line testing-library/no-node-access
     const scripts = document.body.querySelectorAll('script');
     const muntraScript = Array.from(scripts).find(
       script => script.src === 'https://muntra-dev.github.io/index.js'
@@ -69,8 +70,8 @@ describe('TrackingWidget', () => {
   });
 
   it('renders with page-body class', () => {
-    const { container } = render(<TrackingWidget />);
-    const pageBody = container.querySelector('.page-body');
+    render(<TrackingWidget />);
+    const pageBody = screen.getByTestId('page-body');
     expect(pageBody).toBeInTheDocument();
   });
 

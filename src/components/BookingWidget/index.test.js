@@ -34,6 +34,7 @@ describe('BookingWidget', () => {
 
   it('adds script to document body on mount', () => {
     render(<BookingWidget />);
+    // eslint-disable-next-line testing-library/no-node-access
     const scripts = document.body.querySelectorAll('script');
     const muntraScript = Array.from(scripts).find(
       script => script.src === 'https://muntra-dev.github.io/index.js'
@@ -53,14 +54,16 @@ describe('BookingWidget', () => {
   });
 
   it('renders widget divs with muntra_clinic_id', () => {
-    const { container } = render(<BookingWidget />);
-    const widgetDivs = container.querySelectorAll('[muntra_clinic_id]');
+    render(<BookingWidget />);
+    const pageBody = screen.getByTestId('page-body');
+    // eslint-disable-next-line testing-library/no-node-access
+    const widgetDivs = pageBody.querySelectorAll('[muntra_clinic_id]');
     expect(widgetDivs.length).toBeGreaterThan(0);
   });
 
   it('renders with page-body class', () => {
-    const { container } = render(<BookingWidget />);
-    const pageBody = container.querySelector('.page-body');
+    render(<BookingWidget />);
+    const pageBody = screen.getByTestId('page-body');
     expect(pageBody).toBeInTheDocument();
   });
 

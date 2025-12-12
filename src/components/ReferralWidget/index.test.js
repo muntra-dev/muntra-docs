@@ -34,6 +34,7 @@ describe('ReferralWidget', () => {
 
   it('adds script to document body on mount', () => {
     render(<ReferralWidget />);
+    // eslint-disable-next-line testing-library/no-node-access
     const scripts = document.body.querySelectorAll('script');
     const muntraScript = Array.from(scripts).find(
       script => script.src === 'https://muntra-dev.github.io/referral-page/index.js'
@@ -63,15 +64,15 @@ describe('ReferralWidget', () => {
   });
 
   it('renders referral widget div with clinic id', () => {
-    const { container } = render(<ReferralWidget />);
-    const widgetDiv = container.querySelector('.muntra-referral-widget');
+    render(<ReferralWidget />);
+    const widgetDiv = screen.getByTestId('referral-widget');
     expect(widgetDiv).toBeInTheDocument();
     expect(widgetDiv).toHaveAttribute('muntra_clinic_id', '51');
   });
 
   it('renders with page-body class', () => {
-    const { container } = render(<ReferralWidget />);
-    const pageBody = container.querySelector('.page-body');
+    render(<ReferralWidget />);
+    const pageBody = screen.getByTestId('page-body');
     expect(pageBody).toBeInTheDocument();
   });
 });

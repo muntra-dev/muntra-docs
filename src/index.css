@@ -243,18 +243,18 @@ code {
   font-weight: 700;
 }
 
-.UploadIconContainer {
+.CloseButtonContainer {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.UploadIconContainer:hover {
+.CloseButtonContainer:hover {
   opacity: 1;
   visibility: visible;
 }
 
-.Uploadlabel {
+.CloseButtonLabel {
   cursor: pointer;
   height: 39px;
   padding: 10px;
@@ -281,7 +281,7 @@ code {
   vertical-align: top;
 }
 
-.Uploadlabel:hover {
+.CloseButtonLabel:hover {
   background-size: 100% 100%;
   fill: #000;
   stroke: #000;
