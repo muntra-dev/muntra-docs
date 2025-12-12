@@ -8,6 +8,7 @@ import ReferralWidgetSVG from "../assets/svg/ReferralWidgetSVG";
 import TrackingWidget from "./TrackingWidget";
 import TrackingWidgetSVG from "../assets/svg/TrackingWidgetSVG";
 import muntraLogo from "../assets/muntraLogo.png";
+import { version } from "../../package.json";
 
 function App() {
   const [isHelpMenuOpen, setIsHelpMenuOpen] = useState(false);
@@ -72,6 +73,9 @@ function App() {
                 Referral Widget
               </button>
             </div>
+          </div>
+          <div style={{ position: "absolute", bottom: "10px", width: "100%", textAlign: "center", color: "#999", fontSize: "12px" }}>
+            v{version}
           </div>
         </>
       )}

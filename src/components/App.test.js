@@ -145,4 +145,17 @@ describe('App', () => {
     const link = logo.closest('a');
     expect(link).toHaveAttribute('href', 'https://about.muntra.se');
   });
+
+  it('displays version number on home page', () => {
+    render(<App />);
+    const versionElement = screen.getByText(/^v\d+\.\d+\.\d+$/);
+    expect(versionElement).toBeInTheDocument();
+  });
+
+  it('hides version number when on a widget page', () => {
+    render(<App />);
+    const bookingButton = screen.getByText('Booking Widget');
+    fireEvent.click(bookingButton);
+    expect(screen.queryByText(/^v\d+\.\d+\.\d+$/)).not.toBeInTheDocument();
+  });
 });
