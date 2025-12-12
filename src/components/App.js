@@ -8,7 +8,9 @@ import ReferralWidgetSVG from "../assets/svg/ReferralWidgetSVG";
 import TrackingWidget from "./TrackingWidget";
 import TrackingWidgetSVG from "../assets/svg/TrackingWidgetSVG";
 import muntraLogo from "../assets/muntraLogo.png";
-import { version } from "../../package.json";
+import packageJson from "../../package.json";
+
+const { version } = packageJson;
 
 function App() {
   const [isHelpMenuOpen, setIsHelpMenuOpen] = useState(false);
@@ -31,6 +33,7 @@ function App() {
       {isAtPage && (
         <div
           role="button"
+          aria-label="Go back"
           onClick={resetPageStates}
           className="backButtonContainer"
         >

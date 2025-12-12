@@ -1,41 +1,41 @@
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import ReferralWidgetSVG from './ReferralWidgetSVG';
 
 describe('ReferralWidgetSVG', () => {
   it('renders an SVG element', () => {
     const mockOnClick = jest.fn();
-    const { container } = render(<ReferralWidgetSVG onClick={mockOnClick} />);
-    const svg = container.querySelector('svg');
+    render(<ReferralWidgetSVG onClick={mockOnClick} />);
+    const svg = screen.getByRole('button', { name: 'Referral Widget' });
     expect(svg).toBeInTheDocument();
   });
 
   it('applies classProp correctly', () => {
     const mockOnClick = jest.fn();
-    const { container } = render(<ReferralWidgetSVG classProp="test-class" onClick={mockOnClick} />);
-    const svg = container.querySelector('svg');
+    render(<ReferralWidgetSVG classProp="test-class" onClick={mockOnClick} />);
+    const svg = screen.getByRole('button', { name: 'Referral Widget' });
     expect(svg).toHaveClass('test-class');
   });
 
   it('calls onClick with true when clicked', () => {
     const mockOnClick = jest.fn();
-    const { container } = render(<ReferralWidgetSVG onClick={mockOnClick} />);
-    const svg = container.querySelector('svg');
+    render(<ReferralWidgetSVG onClick={mockOnClick} />);
+    const svg = screen.getByRole('button', { name: 'Referral Widget' });
     fireEvent.click(svg);
     expect(mockOnClick).toHaveBeenCalledWith(true);
   });
 
   it('has role="button" for accessibility', () => {
     const mockOnClick = jest.fn();
-    const { container } = render(<ReferralWidgetSVG onClick={mockOnClick} />);
-    const svg = container.querySelector('svg');
+    render(<ReferralWidgetSVG onClick={mockOnClick} />);
+    const svg = screen.getByRole('button', { name: 'Referral Widget' });
     expect(svg).toHaveAttribute('role', 'button');
   });
 
   it('renders with correct dimensions', () => {
     const mockOnClick = jest.fn();
-    const { container } = render(<ReferralWidgetSVG onClick={mockOnClick} />);
-    const svg = container.querySelector('svg');
+    render(<ReferralWidgetSVG onClick={mockOnClick} />);
+    const svg = screen.getByRole('button', { name: 'Referral Widget' });
     expect(svg).toHaveAttribute('width', '375');
     expect(svg).toHaveAttribute('height', '375');
   });

@@ -12,7 +12,7 @@ function BookingWidget() {
   }, []);
 
   return (
-    <div className="auto-margin page-body">
+    <div className="auto-margin page-body" data-testid="page-body">
       <div className="flex-column">
         <h1 className="mainHeader">Muntra Booking Widget Docs</h1>
         <h1>Information</h1>

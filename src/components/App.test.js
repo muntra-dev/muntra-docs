@@ -38,8 +38,8 @@ describe('App', () => {
   });
 
   it('does not show back button on home page', () => {
-    const { container } = render(<App />);
-    const backButton = container.querySelector('.backButtonContainer');
+    render(<App />);
+    const backButton = screen.queryByRole('button', { name: 'Go back' });
     expect(backButton).not.toBeInTheDocument();
   });
 
@@ -51,10 +51,10 @@ describe('App', () => {
   });
 
   it('shows back button when navigating to BookingWidget', () => {
-    const { container } = render(<App />);
+    render(<App />);
     const bookingButton = screen.getByText('Booking Widget');
     fireEvent.click(bookingButton);
-    const backButton = container.querySelector('.backButtonContainer');
+    const backButton = screen.getByRole('button', { name: 'Go back' });
     expect(backButton).toBeInTheDocument();
   });
 
@@ -73,11 +73,11 @@ describe('App', () => {
   });
 
   it('returns to home page when back button is clicked', () => {
-    const { container } = render(<App />);
+    render(<App />);
     const bookingButton = screen.getByText('Booking Widget');
     fireEvent.click(bookingButton);
 
-    const backButton = container.querySelector('.backButtonContainer');
+    const backButton = screen.getByRole('button', { name: 'Go back' });
     fireEvent.click(backButton);
 
     expect(screen.getByText('Muntra Pixel')).toBeInTheDocument();
@@ -85,47 +85,44 @@ describe('App', () => {
   });
 
   it('toggles help menu when Help button is clicked', () => {
-    const { container } = render(<App />);
+    render(<App />);
     const helpButton = screen.getByText('Help');
 
     // Initially help menu should be closed
-    let helpMenu = container.querySelector('.HelpMenuContainer');
+    let helpMenu = screen.getByRole('dialog', { name: 'Help menu' });
     expect(helpMenu).not.toHaveClass('HelpMenuContainerOpen');
 
     // Click to open
     fireEvent.click(helpButton);
-    helpMenu = container.querySelector('.HelpMenuContainer');
+    helpMenu = screen.getByRole('dialog', { name: 'Help menu' });
     expect(helpMenu).toHaveClass('HelpMenuContainerOpen');
 
     // Click to close
     fireEvent.click(helpButton);
-    helpMenu = container.querySelector('.HelpMenuContainer');
+    helpMenu = screen.getByRole('dialog', { name: 'Help menu' });
     expect(helpMenu).not.toHaveClass('HelpMenuContainerOpen');
   });
 
   it('navigates via SVG click on BookingWidgetSVG', () => {
-    const { container } = render(<App />);
-    const svgButtons = container.querySelectorAll('svg[role="button"]');
-    // BookingWidgetSVG is the second one (TrackingWidgetSVG, BookingWidgetSVG, ReferralWidgetSVG)
-    const bookingSvg = svgButtons[1];
+    render(<App />);
+    // Get SVG button (first match - the SVG element with role=button)
+    const bookingSvg = screen.getAllByRole('button', { name: 'Booking Widget' })[0];
     fireEvent.click(bookingSvg);
     expect(screen.getByText('Muntra Booking Widget Docs')).toBeInTheDocument();
   });
 
   it('navigates via SVG click on TrackingWidgetSVG', () => {
-    const { container } = render(<App />);
-    const svgButtons = container.querySelectorAll('svg[role="button"]');
-    // TrackingWidgetSVG is the first one
-    const trackingSvg = svgButtons[0];
+    render(<App />);
+    // Get SVG button (first match - the SVG element with role=button)
+    const trackingSvg = screen.getAllByRole('button', { name: 'Muntra Pixel' })[0];
     fireEvent.click(trackingSvg);
     expect(screen.getByText('Muntra Pixel Docs')).toBeInTheDocument();
   });
 
   it('navigates via SVG click on ReferralWidgetSVG', () => {
-    const { container } = render(<App />);
-    const svgButtons = container.querySelectorAll('svg[role="button"]');
-    // ReferralWidgetSVG is the third one
-    const referralSvg = svgButtons[2];
+    render(<App />);
+    // Get SVG button (first match - the SVG element with role=button)
+    const referralSvg = screen.getAllByRole('button', { name: 'Referral Widget' })[0];
     fireEvent.click(referralSvg);
     expect(screen.getByText('Muntra Referral Widget Docs')).toBeInTheDocument();
   });
@@ -141,8 +138,7 @@ describe('App', () => {
 
   it('has link to muntra website on logo', () => {
     render(<App />);
-    const logo = screen.getByAltText('Muntra Logo');
-    const link = logo.closest('a');
+    const link = screen.getByRole('link', { name: 'Muntra Logo' });
     expect(link).toHaveAttribute('href', 'https://about.muntra.se');
   });
 

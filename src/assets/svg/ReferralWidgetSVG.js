@@ -7,6 +7,7 @@ const ReferralWidgetSVG = ({ classProp, onClick }) => (
       className={classProp}
       onClick={() => onClick(true)}
       role='button'
+      aria-label='Referral Widget'
       xmlns='http://www.w3.org/2000/svg'
       xmlnsXlink='http://www.w3.org/1999/xlink'
       contentScriptType='text/ecmascript'
