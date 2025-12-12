@@ -188,11 +188,6 @@ th {
 [hidden] {
   display: none !important;
 }
-.pure-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
 .auto-margin {
   margin: auto;
 }
@@ -289,10 +284,6 @@ pre code {
   white-space: pre-wrap;
   background-color: transparent;
   border-radius: 0;
-}
-.pre-scrollable {
-  max-height: 340px;
-  overflow-y: scroll;
 }
 
 @media (max-width: 992px) {
