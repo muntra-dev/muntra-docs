@@ -6,7 +6,6 @@ const HelpMenu = ({ isOpen, handleClick }) => {
     <>
       <div
         className={`HelpMenuContainer${isOpen ? " HelpMenuContainerOpen" : ""}`}
-        isOpen={isOpen}
       >
         <div style={{ margin: "5px 28px" }}>
           {" "}
