@@ -237,7 +237,7 @@ function BookingWidget() {
             >
               &#x3C;div class=&#x22;muntra-widget without-modal&#x22;
               key=&#x22;7&#x22; muntra_clinic_id=&#x22;YOUR_CLINIC_ID&#x22;
-              muntra_locale%3D%22nb-no%22
+              muntra_locale=&#x22;nb-no&#x22;
               muntra_referral_source=&#x22;YourClinicDomain.com&#x22;
               muntra_without_modal=&#x22;true&#x22;&#x3E;&#x3C;/div&#x3E;
             </code>
