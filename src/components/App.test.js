@@ -19,12 +19,6 @@ describe('App', () => {
     expect(helpButton).toBeInTheDocument();
   });
 
-  it('renders Muntra Pixel button', () => {
-    render(<App />);
-    const pixelButton = screen.getByText('Muntra Pixel');
-    expect(pixelButton).toBeInTheDocument();
-  });
-
   it('renders Booking Widget button', () => {
     render(<App />);
     const bookingButton = screen.getByText('Booking Widget');
@@ -58,13 +52,6 @@ describe('App', () => {
     expect(backButton).toBeInTheDocument();
   });
 
-  it('shows TrackingWidget when Muntra Pixel button is clicked', () => {
-    render(<App />);
-    const pixelButton = screen.getByText('Muntra Pixel');
-    fireEvent.click(pixelButton);
-    expect(screen.getByText('Muntra Pixel Docs')).toBeInTheDocument();
-  });
-
   it('shows ReferralWidget when Referral Widget button is clicked', () => {
     render(<App />);
     const referralButton = screen.getByText('Referral Widget');
@@ -80,7 +67,7 @@ describe('App', () => {
     const backButton = screen.getByRole('button', { name: 'Go back' });
     fireEvent.click(backButton);
 
-    expect(screen.getByText('Muntra Pixel')).toBeInTheDocument();
+    expect(screen.getByText('Booking Widget')).toBeInTheDocument();
     expect(screen.queryByText('Muntra Booking Widget Docs')).not.toBeInTheDocument();
   });
 
@@ -111,14 +98,6 @@ describe('App', () => {
     expect(screen.getByText('Muntra Booking Widget Docs')).toBeInTheDocument();
   });
 
-  it('navigates via SVG click on TrackingWidgetSVG', () => {
-    render(<App />);
-    // Get SVG button (first match - the SVG element with role=button)
-    const trackingSvg = screen.getAllByRole('button', { name: 'Muntra Pixel' })[0];
-    fireEvent.click(trackingSvg);
-    expect(screen.getByText('Muntra Pixel Docs')).toBeInTheDocument();
-  });
-
   it('navigates via SVG click on ReferralWidgetSVG', () => {
     render(<App />);
     // Get SVG button (first match - the SVG element with role=button)
@@ -133,7 +112,7 @@ describe('App', () => {
     fireEvent.click(bookingButton);
 
     expect(screen.queryByAltText('Muntra Logo')).not.toBeInTheDocument();
-    expect(screen.queryByText('Muntra Pixel')).not.toBeInTheDocument();
+    expect(screen.queryByText('Referral Widget')).not.toBeInTheDocument();
   });
 
   it('has link to muntra website on logo', () => {
