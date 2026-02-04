@@ -5,8 +5,6 @@ import LeftArrowSVG from "../assets/svg/LeftArrowSVG";
 import React, { useState } from "react";
 import ReferralWidget from "./ReferralWidget";
 import ReferralWidgetSVG from "../assets/svg/ReferralWidgetSVG";
-import TrackingWidget from "./TrackingWidget";
-import TrackingWidgetSVG from "../assets/svg/TrackingWidgetSVG";
 import muntraLogo from "../assets/muntraLogo.png";
 import packageJson from "../../package.json";
 
@@ -15,16 +13,14 @@ const { version } = packageJson;
 function App() {
   const [isHelpMenuOpen, setIsHelpMenuOpen] = useState(false);
   const [showBooking, setShowBooking] = useState(false);
-  const [showPixel, setShowPixel] = useState(false);
   const [showReferral, setShowReferral] = useState(false);
 
   const switchHelpMenu = () => setIsHelpMenuOpen(!isHelpMenuOpen);
 
-  const isAtPage = showBooking || showReferral || showPixel;
+  const isAtPage = showBooking || showReferral;
 
   function resetPageStates() {
     setShowBooking(false);
-    setShowPixel(false);
     setShowReferral(false);
   }
 
@@ -40,21 +36,12 @@ function App() {
           <LeftArrowSVG classProp="backButton" />
         </div>
       )}
-      {!showBooking && !showPixel && !showReferral && (
+      {!showBooking && !showReferral && (
         <>
           <a href="https://about.muntra.se">
             <img alt="Muntra Logo" className="logo" src={muntraLogo} />
           </a>
           <div className="flex spaceEvenAndAlignCenter muntraBackground mobileFlexCol">
-            <div className="flexCol justAndAlignCenter">
-              <TrackingWidgetSVG onClick={setShowPixel} classProp="SvgSize" />
-              <button
-                className="SelectButton"
-                onClick={() => setShowPixel(true)}
-              >
-                Muntra Pixel
-              </button>
-            </div>
             <div className="flexCol justAndAlignCenter">
               <BookingWidgetSVG classProp="SvgSize" onClick={setShowBooking} />
               <button
@@ -92,7 +79,6 @@ function App() {
       <HelpMenu handleClick={switchHelpMenu} isOpen={isHelpMenuOpen} />
 
       {showBooking && <BookingWidget />}
-      {showPixel && <TrackingWidget />}
       {showReferral && <ReferralWidget />}
     </div>
   );
