@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/muntra-docs/static/css/main.bb7a6713.css",
-    "main.js": "/muntra-docs/static/js/main.483f2ca4.js",
+    "main.js": "/muntra-docs/static/js/main.3641676c.js",
     "static/media/muntraLogo.png": "/muntra-docs/static/media/muntraLogo.1a20109c9286dcec29ff.png",
     "static/media/Flow.png": "/muntra-docs/static/media/Flow.555bcdbe9a553e61bbca.png",
     "index.html": "/muntra-docs/index.html",
     "main.bb7a6713.css.map": "/muntra-docs/static/css/main.bb7a6713.css.map",
-    "main.483f2ca4.js.map": "/muntra-docs/static/js/main.483f2ca4.js.map"
+    "main.3641676c.js.map": "/muntra-docs/static/js/main.3641676c.js.map"
   },
   "entrypoints": [
     "static/css/main.bb7a6713.css",
-    "static/js/main.483f2ca4.js"
+    "static/js/main.3641676c.js"
   ]
 }
